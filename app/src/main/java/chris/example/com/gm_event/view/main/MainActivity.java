@@ -78,4 +78,11 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
+    
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+        GM_EventApplication.get(this).clearMainComponent();
+    }
 }

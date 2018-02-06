@@ -6,6 +6,8 @@ import android.content.Context;
 import chris.example.com.gm_event.di.app.AppComponent;
 import chris.example.com.gm_event.di.app.AppModule;
 import chris.example.com.gm_event.di.app.DaggerAppComponent;
+import chris.example.com.gm_event.di.details.DetailsComponent;
+import chris.example.com.gm_event.di.details.DetailsModule;
 import chris.example.com.gm_event.di.main.MainComponent;
 import chris.example.com.gm_event.di.main.MainModule;
 import chris.example.com.gm_event.util.Constants;
@@ -19,6 +21,7 @@ public class GM_EventApplication extends Application
 {
     private AppComponent appComponent;
     private MainComponent mainComponent;
+    private DetailsComponent detailsComponent;
     
     @Override
     public void onCreate()
@@ -47,5 +50,15 @@ public class GM_EventApplication extends Application
     public void clearMainComponent()
     {
         mainComponent = null;
+    }
+    
+    public DetailsComponent getDetailsComponent()
+    {
+        detailsComponent = appComponent.add(new DetailsModule());
+        return detailsComponent;
+    }
+    public void clearDetailsComponent()
+    {
+        detailsComponent = null;
     }
 }
