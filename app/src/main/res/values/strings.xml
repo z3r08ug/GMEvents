@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GM-Event</string>
+    <string name="local_events">Local Events</string>
 </resources>

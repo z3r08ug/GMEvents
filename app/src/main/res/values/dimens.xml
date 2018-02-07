@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="std_details">24sp</dimen>
+    <dimen name="std_elevation">2dp</dimen>
+    <dimen name="std_header">34sp</dimen>
+    <dimen name="std_margin">10dp</dimen>
+</resources>

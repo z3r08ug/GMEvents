@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,58 +12,128 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/std_elevation"
+                android:layout_margin="@dimen/std_margin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="36dp"
-                android:layout_gravity="center"
-                android:text="Event Details"
-                />
-            <TextView
-                android:id="@+id/tvName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/std_header"
+                    android:gravity="center_horizontal"
+                    android:text="Event Details"
+                    />
+            </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:id="@+id/ivLogo"
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/std_elevation"
+                android:layout_margin="@dimen/std_margin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:textSize="@dimen/std_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/tvDescription"
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/std_elevation"
+                android:layout_margin="@dimen/std_margin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:textSize="@dimen/std_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/tvUrl"
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/std_elevation"
+                android:layout_margin="@dimen/std_margin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:textSize="@dimen/std_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/tvStart"
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/std_elevation"
+                android:layout_margin="@dimen/std_margin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvUrl"
+                    android:textSize="@dimen/std_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/tvEnd"
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/std_elevation"
+                android:layout_margin="@dimen/std_margin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvStart"
+                    android:textSize="@dimen/std_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/tvCapacity"
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/std_elevation"
+                android:layout_margin="@dimen/std_margin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvEnd"
+                    android:textSize="@dimen/std_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
 
-            <TextView
-                android:id="@+id/tvStatus"
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/std_elevation"
+                android:layout_margin="@dimen/std_margin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvCapacity"
+                    android:textSize="@dimen/std_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
 
-            <TextView
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/std_elevation"
+                android:layout_margin="@dimen/std_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:textSize="@dimen/std_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:elevation="@dimen/std_elevation"
+                android:layout_margin="@dimen/std_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
                 android:id="@+id/tvFree"
+                android:textSize="@dimen/std_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

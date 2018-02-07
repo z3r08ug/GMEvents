@@ -5,16 +5,19 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
     <TextView
+        android:textSize="@dimen/std_details"
         android:id="@+id/tvListName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
+        android:textSize="@dimen/std_details"
         android:id="@+id/tvListStart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
+        android:textSize="@dimen/std_details"
         android:id="@+id/tvListStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

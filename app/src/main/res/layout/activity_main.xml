@@ -11,10 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="36dp"
-        android:layout_gravity="center"
-        android:text="Local Events"
+        android:textSize="@dimen/std_header"
+        android:gravity="center_horizontal"
+        android:text="@string/local_events"
         />
+
+    <View
+        style="@style/Divider"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
+
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
