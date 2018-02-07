@@ -29,8 +29,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
     }
     
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent,
-                                              int viewType)
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_item, parent, false);
@@ -43,7 +42,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
         Event event = events.get(position);
         if (event != null)
         {
-            holder.tvName.setText("Name: " + event.getName());
+            holder.tvName.setText("Name: " + event.getName().getText());
             holder.tvStart.setText("Start Date: " + event.getStart().getLocal());
             holder.tvStatus.setText("Status: " + event.getStatus());
         }
@@ -78,6 +77,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
                 public void onClick(View v)
                 {
                     Intent intent = new Intent(context, DetailsActivity.class);
+                    intent.putExtra("event", events.get(getAdapterPosition()));
                     v.getContext().startActivity(intent);
                 }
             });

@@ -37,6 +37,6 @@ public class RemoteDataSource
     {
         Retrofit retrofit = create();
         RemoteService remoteService = retrofit.create(RemoteService.class);
-        return remoteService.getEvents(token, latitude, longitude);
+        return remoteService.getEvents(latitude, longitude, token);
     }
 }

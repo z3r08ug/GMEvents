@@ -4,7 +4,9 @@ package chris.example.com.gm_event.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class CropMask {
+import java.io.Serializable;
+
+public class CropMask implements Serializable{
 
     @SerializedName("top_left")
     @Expose

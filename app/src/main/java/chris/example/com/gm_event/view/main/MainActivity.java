@@ -71,6 +71,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     {
         events = eventsResponse.getEvents();
         eventsAdapter = new EventsAdapter(events, this);
+        
+        recyclerView.setAdapter(eventsAdapter);
     }
     
     @Override
