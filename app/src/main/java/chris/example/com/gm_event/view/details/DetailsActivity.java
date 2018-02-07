@@ -69,8 +69,15 @@ public class DetailsActivity extends AppCompatActivity implements DetailsContrac
             else
                 tvFree.setText("Free: No");
             
-            if (event.getLogo().getUrl() != null)
-                Picasso.with(this).load(event.getLogo().getUrl()).into(ivLogo);
+            try
+            {
+                if (event.getLogo().getUrl() != null)
+                    Picasso.with(this).load(event.getLogo().getUrl()).into(ivLogo);
+            }
+            catch (Exception e)
+            {
+                Toast.makeText(this, "Failed to download image", Toast.LENGTH_SHORT).show();
+            }
         }
     }
     
